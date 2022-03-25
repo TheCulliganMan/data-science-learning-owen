@@ -16,6 +16,7 @@
 
 ## Programming Suggested Focus
 
+  * bash / unix shell
   * python
   * mongodb
   * redis
