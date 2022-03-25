@@ -1,14 +1,19 @@
 from fastapi import FastAPI
+import redis
+
+r = redis.Redis(
+    host='redis',
+    decode_responses=True,
+)
 
 app = FastAPI()
-COUNTER: int = 0
 
 
 @app.get("/")
 def hello_world():
-    global COUNTER
-    COUNTER += 1
-    return {"message": f"Hello World! {COUNTER}"}
+    r.incr("counter")
+    counter = r.get("counter")
+    return {"message": f"Hello World! {counter}"}
 
 
 if __name__ == "__main__":
