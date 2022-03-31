@@ -15,6 +15,10 @@ def hello_world():
     counter = r.get("counter")
     return {"message": f"Hello World! {counter}"}
 
+@app.get("/owen")
+def hello_owen():
+    return {"message": f"Hello Owen!"}
+
 
 if __name__ == "__main__":
     print(hello_world())
