@@ -30,3 +30,9 @@
   * Unit Testing (pytest)
   * Static testing (mypy, black, flake8)
   * git
+
+# Instructions
+
+Commands to run training / notebooks are in the `Makefile`.
+These commands will spin up a docker-compose orchestration
+that has a deployable breast cancer diagnosis prediction api.
