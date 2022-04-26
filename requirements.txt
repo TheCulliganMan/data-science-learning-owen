@@ -1,4 +1,13 @@
+black
 fastapi
-uvicorn[standard]
+frictionless
 gunicorn
+jupyter
+matplotlib
+pandas
+pandera
+pyyaml
 redis
+sklearn
+uvicorn[standard]
+xgboost
